@@ -6,4 +6,4 @@ image_resource:
   source: {repository: busybox}
 
 run:
-  path: repo/scripts/line_notify.sh
+  path: ../scripts/line_notify.sh
