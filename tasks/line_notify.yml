@@ -5,5 +5,8 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
+inputs:
+- name: repo
+
 run:
-  path: ../scripts/line_notify.sh
+  path: repo/scripts/line_notify.sh
