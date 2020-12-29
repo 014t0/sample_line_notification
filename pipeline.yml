@@ -3,7 +3,7 @@ resources:
 - name: repo
   type: git
   source:
-    uri: https://github.com/014t0/sample_line_notification
+    uri: https://github.com/014t0/sample_line_notification.git
     branch: master
 
 - name: timer
