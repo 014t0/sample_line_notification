@@ -1,0 +1,22 @@
+---
+resources:
+- name: repo
+  type: git
+  source:
+    uri: 
+    branch: master
+
+- name: timer
+  type: time
+  source:
+    interval: 3m
+
+jobs:
+- name: notification
+  plan:
+    - get: repo
+    - get: timer
+      trigger: true
+    - task: happy-new-year
+      file: repo/tasks/line_notify.yml
+    
