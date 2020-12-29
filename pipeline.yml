@@ -9,7 +9,7 @@ resources:
 - name: timer
   type: time
   source:
-    interval: 3m
+    interval: 60m
 
 jobs:
 - name: notification
