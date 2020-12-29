@@ -19,3 +19,5 @@ jobs:
       trigger: true
     - task: happy-new-year
       file: repo/tasks/line_notify.yml
+      params:
+        ACCESS_TOKEN: ((access_token))
